@@ -1,0 +1,28 @@
+<!doctype html>
+<head lang="en">
+  <title>Lunch Counter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" charset="iso-8">
+  <script src="js/angular.min.js"></script>
+  <script src="js/app.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body ng-app="LunchCounter">
+  <div class="container">
+    <h1>Lunch Checker</h1>
+    <div ng-controller="LunchCheckController">
+      <h4>Enter a coma-separated list of the items you had today: </h4>
+      <h6>*empty items are NOT considered as an item towards the count</h6>
+      <div>
+        <section class="red">
+          {{errorMessage}}
+        </section>
+        <input type="text" ng-model="lunchList" class="{{boxColor}}"/>
+        <button ng-click="countItems();">Check If Too Much</button>
+      </div>
+      <div class="green">
+        {{message}}
+      </div>
+    </div>
+  </div>
+</body>

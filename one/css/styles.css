@@ -1,0 +1,19 @@
+.red {
+  color: red;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.green {
+  color: green;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.boxRed {
+  border: 2px solid red;
+}
+
+.boxGreen{
+  border: 2px solid green;
+}
