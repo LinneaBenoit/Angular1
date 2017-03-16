@@ -1,0 +1,12 @@
+h1 {
+  margin-bottom: 30px;
+}
+button {
+  margin-top: 10px;
+}
+a.activeItem {
+  font-weight: bold;
+}
+a.hover {
+    font-weight: bold;
+}
