@@ -29,7 +29,7 @@
         })
 
         .state('items', {
-          url: '/items',
+          url: '/items/{categoryShortName}',
           templateUrl: 'src/templates/items.html',
           controller: 'ItemsCtrl as itemsCtrl',
           resolve: {

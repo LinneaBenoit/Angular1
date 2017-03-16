@@ -4,8 +4,8 @@
   angular.module('MenuApp')
     .controller('ItemsCtrl', ItemsCtrl);
 
-  ItemsCtrl.$inject = ['$scope','MenuDataService', 'myData'];
-  function ItemsCtrl($scope, MenuDataService, myData) {
+  ItemsCtrl.$inject = ['MenuDataService', 'myData'];
+  function ItemsCtrl(MenuDataService, myData) {
     var itemsCtrl = this;
 
     itemsCtrl.items = myData;
